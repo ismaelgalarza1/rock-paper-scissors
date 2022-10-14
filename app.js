@@ -1,15 +1,25 @@
+/* 
+    The Odin Project 
+    Name: Ismael Galarza
+    Date: 10-14-2022
+    Project: Rock, Paper, Scrissors 
+    */
+
 //Declartation of the player and comupter's score for the game
 let playerScore = 0;
 let computerScore = 0;
+
 // function that determines that computers choice
 
 const computerPlay = () => {
-  const computerArr = ["rock", "paper", "scissors"];
+  const computerArr = ["Rock", "Paper", "Scissors"];
   const randNum = Math.floor(Math.random() * 3);
   const computerChoice = computerArr[randNum];
   return computerChoice;
 };
+
 //Function that play a around of rock paper scissors
+
 playRound = (playerSelection, computerSelection) => {
   if (playerSelection == computerSelection) {
     return "You tied with the computer!";
@@ -26,9 +36,12 @@ playRound = (playerSelection, computerSelection) => {
   ) {
     computerScore++;
   } else {
-    return "Please selection the correct weapon";
+    return "Please select the correct weapon";
   }
 };
+
+// function that determines the winner through a for loop
+// and used toLowerCase()
 
 const gamePlay = () => {
   for (let i = 0; i < 5; i++) {
@@ -36,9 +49,8 @@ const gamePlay = () => {
       "choose your weapon",
       "Rock, Paper, or Scrissors"
     );
-    const lowerCapPlayerSelection = playerSelection.toLowerCase();
-    const computerSelection = computerPlay();
-    playRound(playerSelection, computerSelection);
+    const computerSelection = computerPlay().toLowerCase();
+    playRound(playerSelection.toLowerCase(), computerSelection);
   }
   if (playerScore > computerScore) {
     return "You Beat the computer!";
@@ -48,5 +60,7 @@ const gamePlay = () => {
     return " you tied with the computer!";
   }
 };
+
 //the Game() function that calls the playRound function and keeps track of scores
+
 console.log(gamePlay());
