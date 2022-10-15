@@ -23,6 +23,9 @@ startBtn.onclick = () => {
 };
 console.log(startBtn);
 
+let div = document.createElement('div')
+console.log(div)
+
 //Declartation of the player and comupter's score for the game
 let playerScore = 0;
 let computerScore = 0;
