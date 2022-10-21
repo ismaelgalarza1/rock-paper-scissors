@@ -99,6 +99,9 @@ h1 {
 
 /* responsive style*/
 
-/*Phone*/
+/*smart Phone*/
+@media screen and (min-width: 767px){}
 /*Table*/
-/*pc*/
+@media screen and (min-width: 767px) and (max-width: 1023px){}
+/*desktop*/
+@media screen and (min-width: 1024px){}
