@@ -9,6 +9,7 @@ let player;
 let playerScore = 0;
 let computerScore = 0;
 let gameBtns = document.querySelectorAll("div.container button");
+let display = document.querySelector("div.display");
 let compText = document.querySelector("div.compText");
 let compScore = document.querySelector("div.compScore");
 let playerDisp = document.querySelector("div.playerText");
@@ -29,14 +30,14 @@ const getComputerPlay = () => {
 gameBtns.forEach((button) =>
   button.addEventListener("click", () => {
     player = button.textContent;
-
     computerSelection = getComputerPlay();
+    display.textContent = game();
     playerDisp.textContent = `Player: ${player} `;
     compText.textContent = `Computer: ${computerSelection} `;
-    game();
+    compScore.textContent = `Computer:${computerScore}`;
+    playerDisScore.textContent = `Player: ${playerScore}`;
     console.log("1", playerScore, "2", computerScore);
-
-    // theWinner.textContent = winningScore();
+    theWinner.textContent = getGameScore();
   })
 );
 
@@ -44,18 +45,30 @@ const game = () => {
   computerChoice = getComputerPlay();
   console.log("1", player, "2", computerSelection);
   if (player === computerSelection) {
-    console.log("tie");
-  } else if (computerSelection === "Rock") {
-    return player == "Paper" ? playerScore++ : computerScore++;
-  } else if (computerSelection === "Paper") {
-    return player == "Scissors" ? playerScore++ : computerScore++;
-  } else if (computerSelection === "Scissors") {
-    return player === "Rock" ? playerScore++ : computerScore++;
+    return `Player's ${player} and Computer's ${computerSelection} are Tied!`;
+  } else if (
+    (player === "Scissors" && computerSelection === "Paper") ||
+    (player === "Paper" && computerSelection === "Rock") ||
+    (player === "Rock" && computerSelection === "Scissors")
+  ) {
+    playerScore++;
+    return `Player's ${player} Beats Computer's ${computerSelection}`;
+  } else if (
+    (computerSelection === "Scissors" && player === "Paper") ||
+    (computerSelection === "Paper" && player === "Rock") ||
+    (computerSelection === "Rock" && player === "Scissors")
+  ) {
+    computerScore++;
+    return `Computer's ${computerSelection} Beats Player's ${player}`;
   }
 };
 
 getGameScore = () => {
-    if(playerScore === 5){
-      return 
-    }
-} 
+  if (playerScore === 5) {
+    return "Player Wins the Game";
+  } else if (computerScore === 5) {
+    return "Computer Wins the Game";
+  } else {
+    return;
+  }
+};
