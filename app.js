@@ -8,12 +8,12 @@
 let player;
 let playerScore = 0;
 let computerScore = 0;
-let gameBtns = document.querySelectorAll("div.container button");
+let gameBtns = document.querySelectorAll(".container-buttons button");
 let display = document.querySelector("div.display");
-let compText = document.querySelector("div.compText");
-let compScore = document.querySelector("div.compScore");
-let playerDisp = document.querySelector("div.playerText");
-let playerDisScore = document.querySelector("div.playerScore");
+let compText = document.querySelector(".container-text .compText");
+let compScore = document.querySelector(".compScore");
+let playerDisp = document.querySelector(".playerText");
+let playerDisScore = document.querySelector(".playerScore");
 let theWinner = document.querySelector("div.winner");
 
 // function that determines that computers choice
