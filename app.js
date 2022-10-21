@@ -25,7 +25,7 @@ const getComputerPlay = () => {
   return computerSelection;
 };
 
-//Function that play a around of rock paper scissors
+//the for each function that displays the score, choice, and score for each button pressed.
 
 gameBtns.forEach((button) =>
   button.addEventListener("click", () => {
@@ -40,7 +40,7 @@ gameBtns.forEach((button) =>
     theWinner.textContent = getGameScore();
   })
 );
-
+// function that determines the gameplay, winner , and added the game's score
 const game = () => {
   computerChoice = getComputerPlay();
   console.log("1", player, "2", computerSelection);
@@ -62,7 +62,7 @@ const game = () => {
     return `Computer's ${computerSelection} Beats Player's ${player}`;
   }
 };
-
+// Function that determines which player wins when the score equals 5.
 getGameScore = () => {
   if (playerScore === 5) {
     return "Player Wins the Game";
