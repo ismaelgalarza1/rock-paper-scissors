@@ -11,9 +11,9 @@ let computerScore = 0;
 let gameBtns = document.querySelectorAll(".container-buttons button");
 let display = document.querySelector("div.display");
 let compText = document.querySelector(".container-text .compText");
-let compScore = document.querySelector(".compScore");
+let compScore = document.getElementById('computerScore');
 let playerDisp = document.querySelector(".playerText");
-let playerDisScore = document.querySelector(".playerScore");
+let playerDisScore = document.getElementById('player-score');
 let theWinner = document.querySelector("div.winner");
 
 // function that determines that computers choice
@@ -36,14 +36,13 @@ gameBtns.forEach((button) =>
     compText.textContent = `Computer: ${computerSelection} `;
     compScore.textContent = `Computer:${computerScore}`;
     playerDisScore.textContent = `Player: ${playerScore}`;
-    console.log("1", playerScore, "2", computerScore);
     theWinner.textContent = getGameScore();
   })
 );
 // function that determines the gameplay, winner , and added the game's score
 const game = () => {
   computerChoice = getComputerPlay();
-  console.log("1", player, "2", computerSelection);
+
   if (player === computerSelection) {
     return `Player's ${player} and Computer's ${computerSelection} are Tied!`;
   } else if (

@@ -1,7 +1,7 @@
 /* style for html div */
 html {
-    padding: 0;
-    margin: 20px;
+    position: relative;
+    min-height: 100%;
     border: 8px red solid;
 
 }
@@ -38,8 +38,8 @@ h1 {
 }
 
 /*image placeholder */
-.img1,
-.img2 {
+.score-box2,
+.score-box1 {
     height: 25vh;
     width: 35vh;
     border: 5px grey solid;
@@ -66,10 +66,7 @@ h1 {
     justify-content: center;
     padding: 30px;
     font-size: 38px;
-    border: 8px red solid;
 }
-
-
 
 /* style for Container div*/
 .container-buttons {
@@ -80,16 +77,6 @@ h1 {
     border: 8px red solid;
 }
 
-/* style for rockBtn div*/
-/*  */
-
-.container-comp {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 120vh;
-
-}
 
 h4 {
     text-align: center;
@@ -97,7 +84,8 @@ h4 {
 
 .playerScore,
 .compScore {
-    border: 8px red solid;
+    color: white;
+    
 
 }
 
