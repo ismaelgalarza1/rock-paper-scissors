@@ -19,7 +19,6 @@ h1 {
     display: block;
     text-align: center;
     padding: 0 0 90px 0;
-    border: 8px red solid;
 }
 
 /* style for display div*/
@@ -28,43 +27,36 @@ h1 {
     flex-direction: column;
     text-align: center;
     font-size: 48px;
-    border: 8px red solid;
+    padding-bottom: 30px;
 }
+
 /* style for container text used flex */
 .container-text {
     display: flex;
-    justify-items: center;
-    gap: 32vh;
-}
-/*image placeholder */
-.image-placeholder {
-    background-color: #eee;
-    height: 180px;
-    margin: 5px;
-    width: 260px;
+    justify-content: center;
+    gap: 12vh;
 }
 
-.image-placeholder > h4 {
-    align-self: center;
-    text-align: center;
-    width: 100%;
+/*image placeholder */
+.img1,
+.img2 {
+    height: 25vh;
+    width: 35vh;
+    border: 5px grey solid;
 }
 
 /* style for playerText */
-.playerText {
-    text-align: left;
-    padding: 0 200px;
+.playerText,
+.compText {
+    margin-bottom: auto;
     font-size: 28px;
-    border: 8px red solid;
-
 }
 
 /* style for compText */
-.container-text .compText {
+.container-text {
     color: white;
-    padding: 0 200px;
     font-size: 28px;
-    border: 8px red solid;
+
 }
 
 /* style for Winner div*/
@@ -77,6 +69,8 @@ h1 {
     border: 8px red solid;
 }
 
+
+
 /* style for Container div*/
 .container-buttons {
     display: flex;
@@ -87,21 +81,35 @@ h1 {
 }
 
 /* style for rockBtn div*/
-.container * {
-    height: 40px;
-    width: 100px;
-    border-radius: 10%;
+/*  */
+
+.container-comp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120vh;
 
 }
 
-/* style for paperBtn div*/
-/* style for scissorsBtn div*/
+h4 {
+    text-align: center;
+}
+
+.playerScore,
+.compScore {
+    border: 8px red solid;
+
+}
+
+
 
 /* responsive style*/
 
 /*smart Phone*/
-@media screen and (min-width: 767px){}
+@media screen and (min-width: 767px) {}
+
 /*Table*/
-@media screen and (min-width: 767px) and (max-width: 1023px){}
+@media screen and (min-width: 767px) and (max-width: 1023px) {}
+
 /*desktop*/
-@media screen and (max-width: 1024px){}
+@media screen and (max-width: 1024px) {}

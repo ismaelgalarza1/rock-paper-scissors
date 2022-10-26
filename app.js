@@ -4,7 +4,7 @@
     Project: Rock, Paper, Scrissors part 2
     */
 
-//Declartation of the player and comupter's score for the game
+//the player and comupter's score for the game
 let player;
 let playerScore = 0;
 let computerScore = 0;
