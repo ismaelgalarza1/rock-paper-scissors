@@ -12,7 +12,8 @@ html {
     background-color: #111720;
     font-size: 20px;
 }
-.game-title{
+
+.game-title {
     text-align: center;
     font-size: 50px;
     padding: 1em 9em;
@@ -33,11 +34,12 @@ body {
     flex-direction: column;
     text-align: center;
     font-size: 48px;
+    padding: 60px 0 32px;
 }
 
 /* style for container text used flex */
 .container-text {
-    padding-top: 25px;
+    padding-top: 75px;
     display: flex;
     justify-content: center;
     gap: 12vh;
@@ -77,7 +79,19 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 36px;
+}
+
+.container-buttons>button {
+
+    padding: 7px 1em;
+    width: 120px;
+    background-color: #111720;
+    border-radius: 8px;
+    color: white;
+    padding: auto;
+    font-size: 20px;
+
 }
 
 h4 {
