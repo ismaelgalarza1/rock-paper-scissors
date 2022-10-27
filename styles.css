@@ -2,24 +2,30 @@
 html {
     position: relative;
     min-height: 100%;
-    border: 8px red solid;
+    border: 10px grey solid;
 
+}
+
+.header {
+    border: 15vh;
+    padding: 1em 13em;
+    background-color: #111720;
+    font-size: 20px;
+}
+.game-title{
+    text-align: center;
+    font-size: 50px;
+    padding: 1em 9em;
 }
 
 /* style for Background and color for the entire html page*/
 body {
     min-height: 100vh;
-    padding: 50px;
+    padding: auto;
     background-color: black;
     color: white;
 }
 
-h1 {
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 0 0 90px 0;
-}
 
 /* style for display div*/
 .display {
@@ -27,11 +33,11 @@ h1 {
     flex-direction: column;
     text-align: center;
     font-size: 48px;
-    padding-bottom: 30px;
 }
 
 /* style for container text used flex */
 .container-text {
+    padding-top: 25px;
     display: flex;
     justify-content: center;
     gap: 12vh;
@@ -61,9 +67,7 @@ h1 {
 
 /* style for Winner div*/
 .winner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: center;
     padding: 30px;
     font-size: 38px;
 }
@@ -74,9 +78,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    border: 8px red solid;
 }
-
 
 h4 {
     text-align: center;
@@ -85,8 +87,22 @@ h4 {
 .playerScore,
 .compScore {
     color: white;
-    
+}
 
+/* footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 10%;
+    width: 100%;
+    padding: 0px;
+    background-color: #111720;
+    font-size: 20px;
 }
 
 
