@@ -1,25 +1,35 @@
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
 /* style for html div */
 html {
     position: relative;
     min-height: 100%;
+    padding: 0;
     border: 10px grey solid;
 
 }
 
 .header {
     border: 15vh;
-    padding: 1em 13em;
+    padding: 1em 10em;
     background-color: #111720;
     font-size: 20px;
 }
 
 .game-title {
     text-align: center;
-    font-size: 50px;
+    font-size: 4rem;
     padding: 1em 9em;
 }
 
 /* style for Background and color for the entire html page*/
+
 body {
     min-height: 100vh;
     padding: auto;
@@ -27,8 +37,8 @@ body {
     color: white;
 }
 
-
 /* style for display div*/
+
 .display {
     display: flex;
     flex-direction: column;
@@ -83,7 +93,6 @@ body {
 }
 
 .container-buttons>button {
-
     padding: 7px 1em;
     width: 120px;
     background-color: #111720;
@@ -91,7 +100,6 @@ body {
     color: white;
     padding: auto;
     font-size: 20px;
-
 }
 
 h4 {
@@ -120,14 +128,46 @@ h4 {
 }
 
 
-
 /* responsive style*/
 
 /*smart Phone*/
-@media screen and (min-width: 767px) {}
+@media (min-width: 375px) and (max-width: 1180px){
+    .header{
+        padding: 35px
+    }
+    .game-title {
+        margin: auto;
+        font-size: 22px;
+        padding: 0;
+    }
+    .score-box1 *{
 
-/*Table*/
-@media screen and (min-width: 767px) and (max-width: 1023px) {}
+        font-size: 15px;
+    }
+    .score-box2 *{
+        font-size: 14px;
+    }
+    .display{
+        padding: 0;
+        font-size: 20px;
+    }
+    .winner{
+        padding: 15px;
+        font-size: 15px;
+    }
+    .container-text{
+        padding: 10px;
 
-/*desktop*/
-@media screen and (max-width: 1024px) {}
+    }
+    .container-buttons{
+        
+        padding: 0;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 1722px) {
+    .game-title{
+        font-size: 2rem;
+    }
+}
