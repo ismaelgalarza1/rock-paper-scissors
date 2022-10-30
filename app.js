@@ -39,6 +39,7 @@ gameBtns.forEach((button) =>
     theWinner.textContent = getGameScore();
   })
 );
+
 // function that determines the gameplay, winner , and added the game's score
 const game = () => {
   computerChoice = getComputerPlay();
@@ -70,9 +71,4 @@ getGameScore = () => {
   } else {
     return;
   }
-};
-
-getNewGame = () => {
-  player = 0;
-  compScore = 0;
 };
