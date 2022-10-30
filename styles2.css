@@ -2,3 +2,9 @@
 @media screen and (max-width: 767px){
 /* to do : adjust all values to match the mobile screen*/
 }
+@media screen and (min-width: 767) and (max-width: 1028px ){
+    /*ToDo: adjust values to match the screen for a tablet */
+}
+/*@media screen and () and () {
+/*TODO: adjust values to match desktop screens
+}*/
