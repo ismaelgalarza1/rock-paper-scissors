@@ -8,7 +8,6 @@
 let player;
 let playerScore = 0;
 let computerScore = 0;
-let playerImg = document.querySelector(".img-choice");
 let gameBtns = document.querySelectorAll(".container-buttons button");
 let display = document.querySelector("div.display");
 let compText = document.querySelector(".container-text .compText");
@@ -16,7 +15,7 @@ let compScore = document.getElementById("computerScore");
 let playerDisp = document.querySelector(".playerText");
 let playerDisScore = document.getElementById("player-score");
 let theWinner = document.querySelector("div.winner");
-const newGame = document.querySelector();
+const newGame = document.querySelector(".restartBtn");
 // function that determines that computers choice
 
 const getComputerPlay = () => {
@@ -76,5 +75,4 @@ getGameScore = () => {
 getNewGame = () => {
   player = 0;
   compScore = 0;
-
 };
