@@ -64,7 +64,8 @@ body {
 .playerText,
 .compText {
     margin-bottom: auto;
-    font-size: 28px;
+    font-size: 48px;
+    padding-bottom: 40px;
 }
 
 /* style for compText */
