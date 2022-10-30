@@ -8,6 +8,7 @@
 let player;
 let playerScore = 0;
 let computerScore = 0;
+let playerImg = document.querySelector(".img-choice")
 let gameBtns = document.querySelectorAll(".container-buttons button");
 let display = document.querySelector("div.display");
 let compText = document.querySelector(".container-text .compText");
@@ -71,3 +72,9 @@ getGameScore = () => {
     return;
   }
 };
+
+getNewGame = () => {
+  player = 0;
+  compScore = 0; 
+  
+}
