@@ -1,10 +1,65 @@
 /*Responsive for phone*/
-@media screen and (max-width: 767px){
-/* to do : adjust all values to match the mobile screen*/
+@media screen and (max-width: 767px) {
+
+    /* to do : adjust all values to match the mobile screen*/
+    .header {
+        padding: 30px;
+    }
+
+    .game-title {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .display {
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .container-text {
+        font-size: 2.5vh;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .playerText,
+    .compText {
+        padding: 0px;
+        font-size: 4vh;
+    }
+
+    .winner {
+        font-size: 3vh;
+    }
+
+    .container-buttons {
+        gap: 7px;
+    }
+    .footer{
+        font-size: 1rem;
+    }
 }
-@media screen and (min-width: 767) and (max-width: 1028px ){
-    /*ToDo: adjust values to match the screen for a tablet */
-}
-/*@media screen and () and () {
-/*TODO: adjust values to match desktop screens
-}*/
+
+@media screen and (min-width: 768px) { 
+    .header{
+      padding: 4vh;
+    }
+    .game-title{
+        padding: 0;
+        font-size: 4vh;
+    }
+    .display{
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .container-text{
+        padding: 10px;
+        font-size: 1.5rem;
+        gap: 20px;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+
+
+} 
