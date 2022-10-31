@@ -1,5 +1,4 @@
-/* 
-    The Odin Project 
+/*  The Odin Project 
     Name: Ismael Galarza
     Project: Rock, Paper, Scrissors part 2
     */
@@ -16,6 +15,7 @@ let playerDisp = document.querySelector(".playerText");
 let playerDisScore = document.getElementById("player-score");
 let theWinner = document.querySelector("div.winner");
 let restartGame = document.querySelector(".restartBtn");
+
 // function that determines that computers choice
 
 const getComputerPlay = () => {
@@ -26,6 +26,16 @@ const getComputerPlay = () => {
 };
 
 //the for each function that displays the score, choice, and score for each button pressed.
+getNewGame = () => {
+  playerScore = 0;
+  computerScore = 0;
+  display.textContent = "Choose Your Weapons";
+  playerDisp.textContent = "?";
+  playerDisScore.textContent = `Score: ${playerScore}`;
+  compText.textContent = "?";
+  compScore.textContent = `Score: ${computerScore}`;
+  theWinner.textContent = "Who Will Win?";
+};
 
 gameBtns.forEach((button) =>
   button.addEventListener("click", () => {
@@ -62,6 +72,7 @@ const game = () => {
     return `Computer's ${computerSelection} Beats Player's ${player}`;
   }
 };
+
 // Function that determines which player wins when the score equals 5.
 getGameScore = () => {
   if (playerScore === 5) {
@@ -72,15 +83,3 @@ getGameScore = () => {
     return;
   }
 };
-
-getNewGame = () => {
-  let playerScore = 0;
-  let computerScore = 0;
-  display.textContent = "Choose Your Weapons";
-  playerDisp.textContent = "?";
-  playerDisScore.textContent = "Score: 0";
-  compText.textContent = "?";
-  compScore.textContent = "Score: 0";
-  theWinner.textContent = "Who Will Win?";
-};
-restartGame.addEventListener("click", getNewGame);
