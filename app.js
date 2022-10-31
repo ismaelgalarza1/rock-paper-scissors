@@ -39,17 +39,6 @@ gameBtns.forEach((button) =>
     theWinner.textContent = getGameScore();
   })
 );
-getNewGame = () => {
-  let playerScore = 0;
-  let computerScore = 0;
-  display.textContent = "Choose Your Weapons";
-  playerDisp.textContent = "?";
-  playerDisScore.textContent = "Score: 0";
-  compText.textContent = "?";
-  compScore.textContent = "Score: 0";
-  theWinner.textContent = "Who Will Win?";
-};
-restartGame.addEventListener("click", getNewGame);
 
 // function that determines the gameplay, winner , and added the game's score
 const game = () => {
@@ -83,3 +72,15 @@ getGameScore = () => {
     return;
   }
 };
+
+getNewGame = () => {
+  let playerScore = 0;
+  let computerScore = 0;
+  display.textContent = "Choose Your Weapons";
+  playerDisp.textContent = "?";
+  playerDisScore.textContent = "Score: 0";
+  compText.textContent = "?";
+  compScore.textContent = "Score: 0";
+  theWinner.textContent = "Who Will Win?";
+};
+restartGame.addEventListener("click", getNewGame);
