@@ -20,7 +20,7 @@ html {
     padding: 1em 9em;
 }
 
-/* style for Background and color for the entire html page*/
+/* body style */
 
 body {
     min-height: 100vh;
@@ -47,7 +47,7 @@ body {
     gap: 12vh;
 }
 
-/*image placeholder */
+/*style for the two score boxes */
 .score-box2,
 .score-box1 {
     flex-direction: column;
@@ -58,7 +58,7 @@ body {
     background-color: #111720;
 }
 
-/* style for playerText */
+/* style for playerText and compText inside the score boxes */
 .playerText,
 .compText {
     margin-bottom: auto;
@@ -66,7 +66,7 @@ body {
     padding-bottom: 40px;
 }
 
-/* style for compText */
+/* style for the container-text  */
 .container-text {
     color: white;
     font-size: 28px;
@@ -80,7 +80,7 @@ body {
     font-size: 38px;
 }
 
-/* style for Container div*/
+/* style for Container-buttons div*/
 .container-buttons {
     display: flex;
     flex-direction: row;
@@ -98,10 +98,12 @@ body {
     font-size: 20px;
 }
 
+/* center alignment for h4 tag */
 h4 {
     text-align: center;
 }
 
+/*player and computer score font color*/
 .playerScore,
 .compScore {
     color: white;
@@ -123,10 +125,12 @@ h4 {
     font-size: 20px;
 }
 
+/* the Github icon color*/
 .footer a {
     color: white;
 }
 
+/*sytle for the restart button*/
 .restart-button {
     display: flex;
     justify-content: center;
@@ -142,4 +146,3 @@ h4 {
     padding: auto;
     font-size: 1.5vh;
 }
-

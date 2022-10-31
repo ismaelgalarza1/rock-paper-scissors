@@ -4,6 +4,7 @@
     */
 
 //the player and comupter's score for the game
+
 let player;
 let playerScore = 0;
 let computerScore = 0;
@@ -25,7 +26,7 @@ const getComputerPlay = () => {
   return computerSelection;
 };
 
-//the for each function that displays the score, choice, and score for each button pressed.
+// function that resets the game after the new game is pressed
 getNewGame = () => {
   playerScore = 0;
   computerScore = 0;
@@ -36,7 +37,7 @@ getNewGame = () => {
   compScore.textContent = `Score: ${computerScore}`;
   theWinner.textContent = "Who Will Win?";
 };
-
+//the for each function that displays the score, choice, and score for each button pressed.
 gameBtns.forEach((button) =>
   button.addEventListener("click", () => {
     player = button.textContent;
@@ -51,6 +52,7 @@ gameBtns.forEach((button) =>
 );
 
 // function that determines the gameplay, winner , and added the game's score
+
 const game = () => {
   computerChoice = getComputerPlay();
 
